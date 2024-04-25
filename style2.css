@@ -1,0 +1,277 @@
+
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+h1, h2, #btnVideo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+h1 {
+    font-size: 5vmax;
+    margin-top: 25vh;
+    animation: move 3s infinite;
+    mix-blend-mode:difference;
+}
+h2 {
+    font-size: 3rem;
+    color: rgb(255, 215, 0);
+}
+#btnVideo{
+    font-size: 1.5rem;
+    background: 0;
+    border: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+button {
+    border: transparent;
+    background: transparent;
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vmin;
+    mix-blend-mode:difference;
+}
+section>div {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "h2 h2""img p";
+    gap: 0px;
+    background: rgb(10, 3, 69);
+    padding: 5vh 5vmax;
+}
+div>h2 {
+    grid-area: h2;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0% 10%;
+    margin-bottom: 5vmin;
+}
+
+section>div>img {
+    grid-area: img;
+    width: 50vw;
+}
+
+section>div>p {
+    margin: 10vh 2vw;
+}
+.hr {
+    padding: 0 10vw 15vw 10vw;
+}
+p {
+    grid-area: p;
+    font-size: 3vh;
+    text-align: justify;
+    color: #D9E4E6;
+}
+
+section>div>div {
+    display: grid;
+    grid-template-columns: 100% 0%;
+}
+.un {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+section>img {
+    width: 45vw;
+    top: 0;
+    position: sticky;
+    padding: 30vh 0;
+}
+ul>li {
+    list-style: none;
+    margin: 35vh 5vw;
+}
+ol>li {
+    margin: 3vh 0;
+    list-style: decimal;
+    text-align: center;
+    grid-area: p;
+    font-size: 2vh;
+    font-weight: 600;
+    color: #D9E4E6;
+}
+.deux {
+    padding: 10vh 20vw;
+}
+.deux>p {
+    color: black;
+}
+section,main {
+    margin: 0%;
+    padding: 0%;
+}
+footer {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+footer>div>h1 {
+    padding: 0%;
+    margin: 2vh;
+    font-size: 4vh;
+    text-align: left;
+    color: lightgrey;
+}
+footer>div>h2 {
+    padding: 0%;
+    margin: 2vh;
+    font-size: 2vh;
+    text-align: left;
+    color: lightgrey;
+}
+footer>div>img {
+    height: 10vh;
+    margin-top: 3vh;
+}
+footer>div {
+    padding-top: 4vh;
+    padding-left: 10vw;
+}
+footer>div+div {
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer>div>ul>li {
+    margin: 0 2vw;
+}
+footer>div>ul {
+    display: flex;
+    margin: 5vh 0;
+}
+.plz {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "bimg bimg mimg""bimg bimg mimg""mimg bimg bimg""mimg bimg bimg";
+}
+.bimg {
+    grid-area: bimg;
+}
+.mimg {
+    grid-area: mimg;
+}
+
+#social>li>a>img {
+    height: 5vw;
+    
+}
+
+
+
+
+
+
+.slide,.slides,.slider {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    align-content: center;
+}
+
+.slide>div {
+    text-align: center;
+    width: 26vw;
+}
+
+.slide>a {
+    background-color: aqua;
+}
+
+.slide>a>img {
+    height: 10vh;
+}
+
+.slider {
+    width: 30vw;
+    margin-left: 15vw;
+    overflow: hidden;
+}
+
+.slides {
+    width: calc(30vw*5);
+    animation: glisse 30s infinite;
+}
+
+.slide {
+    margin: 2vw;
+    float: left;
+}
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(0);
+    }
+    11% {
+        transform: translateX(-30vw);
+    }
+    16% {
+        transform: translateX(-30vw);
+    }
+    22% {
+        transform: translateX(-60vw);
+    }
+    27% {
+        transform: translateX(-60vw);
+    }
+    33% {
+        transform: translateX(-90vw);
+    }
+    38% {
+        transform: translateX(-90vw);
+    }
+    44% {
+        transform: translateX(-120vw);
+    }
+    49% {
+        transform: translateX(-120vw);
+    }
+    55% {
+        transform: translateX(-120vw);
+    }
+    60% {
+        transform: translateX(-120vw);
+    }
+    66% {
+        transform: translateX(-90vw);
+    }
+    71% {
+        transform: translateX(-90vw);
+    }
+    77% {
+        transform: translateX(-60vw);
+    }
+    82% {
+        transform: translateX(-60vw);
+    }
+    88% {
+        transform: translateX(-30vw);
+    }
+    93% {
+        transform: translateX(-30vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

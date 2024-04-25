@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new nav.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#Home" class="logo">VENTO</a><!--<img src="assets/logo.svg" alt="logo">-->
+        <div class="navlinks">
+            <ul>
+                <li class="active"><a href="#" class="b">Valeurs</a></li>
+                <li><a href="#Valeurs" class="l">Valeurs</a></li>
+                <li><a href="#Catalogue" class="m">Catalogue</a></li>
+                <li><a href="#Partenaires" class="n">Partenaires</a></li>
+                <li><a href="#contact" class="o">Nous contacter</a></li>
+            </ul>
+        </div>
+        <img src="assets/menu_60.png" alt="menu" class="hamburger">
+    </nav>
+    
+</body>
+<script>
+    const Hamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navlinks")
+    const menu = document.querySelector(".b")
+    const menu1 = document.querySelector(".l")
+    const menu2 = document.querySelector(".m")
+    const menu3 = document.querySelector(".n")
+    const menu4 = document.querySelector(".o")
+
+    Hamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu1.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu2.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu3.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu4.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

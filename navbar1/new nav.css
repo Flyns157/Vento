@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nova+Round&family=Varela+Round&display=swap');
+* {
+    margin: 0;padding: 0;text-decoration: none;list-style: none;
+}
+body {
+    background: url('assets/site.png');font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+    font-family: 'Nova Round', cursive;
+}
+h2 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* azertyghj */
+.navbar {
+    position: absolute; padding: 50px; display: flex; justify-content: space-between; width: 100%; box-sizing: border-box; align-items: center;
+    background: #0a034585; backdrop-filter: blur(7px); 
+}
+.navbar a {
+    color: #D9E4E6; 
+}
+.navbar .logo {
+    font-size: 5vh; font-weight: bold; letter-spacing: 10px; font-family: 'Nova Round', cursive;
+}
+.navbar .navlinks ul {
+    display: flex; gap: 2vw; font-size: 2vh;
+}
+.navbar .navlinks ul li {
+    margin: 0 25px;
+}
+.navbar .navlinks ul li.active a {
+    color: red; font-weight: 600;
+}
+.navbar .hamburger {
+    display: none;position: absolute; top: 55px; right: 50px; width: 35px;
+}
+@media screen and (max-width: 1250px) {
+    .navbar .navlinks ul {
+        gap: 2vw;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar .logo {
+        position: absolute; top: 50px; left: 50px;
+    }
+    .navbar .hamburger {
+        display: block;
+    }
+    .navlinks {
+        margin-left: -100%; top: 0;left: 0;position: absolute; background: #0a034585; backdrop-filter: blur(7px); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; transition: all 0.5s ease;
+    }
+    .navlinks.mobile-menu {
+        margin-left: 0;
+    }
+    .navlinks ul {
+        display: flex; flex-direction: column; text-align: center;
+    }
+    .navbar .navlinks ul li {
+        margin: 25px 0;
+        font-size: 3vh;
+    }
+}

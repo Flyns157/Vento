@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Vento</title>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="assets/FloconsDeNeige.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar">
+        <a href="#Home" class="logo">VENTO<img src="assets/logo.svg" alt="logo"></a>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#Valeurs" class="l">Valeurs</a></li>
+                <li><a href="#Catalogue" class="m">Catalogue</a></li>
+                <li><a href="#Partenaires" class="n">Partenaires</a></li>
+                <li><a href="#" class="o">Contacter</a></li>
+            </ul>
+        </div>
+        <img src="assets/menu_60.png" alt="menu" class="hamburger">
+    </nav>
+
+    <div class="head">
+        <h1>h1</h1>
+        <h2>h2</h2>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><div><a href="https://www.arras.fr/" target="_blank"><img src="assets/logo_arras.png" alt="Mairie d'Arras"></a></div></div>
+            <div class="slide"><div><a href="https://www.leroymerlin.fr/" target="_blank"><img src="assets/Leroy_Merlin.svg" alt="Leroy-Merlin"></a></div></div>
+            <div class="slide"><div><a href="https://www.castorama.fr/" target="_blank"><img src="assets/castorama.svg" alt="Castorama"></a></div></div>
+            <div class="slide"><div><a href="https://www.engie.fr/" target="_blank"><img src="assets/engie.png" alt="Engie (EDF)"></a></div></div>
+            <div class="slide"><div><a href="https://www.bslsecurite.com/" target="_blank"><img src="assets/bsl-securite.png" alt="BSL sécurité"></a></div></div>
+        </div>
+    </div>
+
+    <div class="sell">
+        <div class="vimg">
+            <div class="cadre"><img src="assets/site.png" class="prevImg"></div>
+            <div class="dock">
+                <div class="image"><img onclick="switchImg('assets/site.png')" src="assets/site.png" alt="img1"></div>
+                <div class="image"><img onclick="switchImg('assets/twitter.png')" src="assets/twitter.png" alt="img2"></div>
+                <div class="image"><img onclick="switchImg('assets/noel.svg')" src="assets/noel.svg" alt="img3"></div>
+                <div class="image"><img onclick="switchImg('assets/noel.svg')" src="assets/noel.svg" alt="img3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="prod">
+                <h2>Nom du produit</h2>
+                <p>Description du produit : Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae qui reiciendis sit, labore quis pariatur dicta, voluptatum praesentium nemo unde. Molestiae commodi dolores tenetur voluptas. Nobis ipsam possimus quidem?</p>
+            </div>
+            <form class="by" methode="POST">Nombre d'exemplaires :<input class="nb" type="number" min="1" value="1"><input class="send" type="submit"></form>
+        </div>
+    </div>
+
+    <div style="height: 1000px; background: red;"></div>
+
+    <footer id="contact">
+        <div>
+            <h1>info@vento.com</h1>
+            <h2>14, chemin de Regnier<br>La Bastic, 62756, France</h2>
+            <div class="lang"><a href="en" ><img src="assets/en-flag.svg" alt=""></a><a href="en">English website</a></div>
+        </div>
+        <div>
+            <img src="assets/logo.svg" alt="logo">
+            <h2 style="margin: 0;">Suivez nous sur :</h2>
+            <ul id="social">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png" alt="twitter"></a></li>
+                <li><a href="https://discord.com/" target="_blank"><img src="assets/discorde.png" alt="discord"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navlinks")
+    const menu1 = document.querySelector(".l")
+    const menu2 = document.querySelector(".m")
+    const menu3 = document.querySelector(".n")
+    const menu4 = document.querySelector(".o")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu1.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu2.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu3.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    menu4.addEventListener('click',()=>{
+    navLinks.classList.toggle('right')
+    })
+</script>
+<script>
+    function switchImg(source) {
+        document.querySelector(".prevImg").src = source;
+    }
+</script>
+</html>

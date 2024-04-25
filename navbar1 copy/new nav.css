@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nova+Round&family=Varela+Round&display=swap');
+* {
+    margin: 0;padding: 0;text-decoration: none;list-style: none;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+    font-family: 'Nova Round', cursive;
+}
+h2 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    justify-content: center; align-items: center;display: flex; flex-direction: column;height: 100vh; width: 100%;background-image: url('assets/pexels-matej-1718168.jpg'); background-size: cover;
+}
+header h1 {
+    font-size: 5vh; color: #FFD700;
+}
+header h2 {
+    font-size: 3vh; color: #D9E4E6;
+}
+/* azertyghj */
+.navbar {
+    z-index: 999;;padding: 0 3vw;min-height: 8vh;position: absolute;display: flex; background: #0a034585; justify-content: space-between; width: 100%; box-sizing: border-box; align-items: center; backdrop-filter: blur(7px); 
+}
+.navbar .name {
+    font-weight: 700;float: left; font-size: 5vh; font-family: 'Nova Round', cursive; letter-spacing: 10px;
+}
+.navbar .navlinks {
+    display: flex; padding: 0; margin: 0;
+}
+.navbar .navlinks ul {
+    display: flex; gap: 5vw;
+}
+.navbar .navlinks ul {
+    font-size: 2vh;
+}
+.navbar .navlinks ul li {
+    padding: 1vh;
+}
+.navbar .navlinks .active {
+    font-weight: 600; color: #FFD700;
+}
+.navbar a {
+    color: #D9E4E6; font-family: 'Varela Round', sans-serif;
+}
+.navbar .navlinks li:hover {
+    font-weight: bold; border-radius: 15px; color: #FFD700;
+}
+
+
+
+.navbar .hamburger {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar .navlinks ul li {
+        height: auto;
+    }
+    .navbar .hamburger {
+        display: block;position: absolute;top: 40px;right: 3vw;width: 5vh;margin: 10px 3vw;
+    }
+    .navbar .navlinks ul {
+        display: flex;
+    }
+    .navlinks {
+        position: absolute;top: 0;left: 0;display: flex;justify-content: center;align-items: center;background: #0a0345a8;width: 100%;height: 100vh;backdrop-filter: blur(7px);margin-left: -100%;transition:  all 0.5s ease;
+    }
+    .navlinks.mobile-menu {
+        margin-left: 0;
+    }
+    .navlinks ul {
+        display: flex;flex-direction: column;align-items: center;
+    }
+    .navbar a {
+        font-size: 7vw;
+    }
+    .navbar .logo {
+        position: absolute;top: 50px;left: 5vw;
+    }
+    .navlinks a:hover {
+        color: rgb(255, 215, 0);font-size: 8vh;
+    }
+}
